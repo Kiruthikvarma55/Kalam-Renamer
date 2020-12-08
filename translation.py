@@ -47,3 +47,4 @@ The given file name has {num} characters.
 <b>Essays Not allowed in Telegram file name!</b>
 ©️ <code>@Kalam_Renamer_Bot</code>
 Please short your file name and try again!"""
+    DONATION = "Hii, my friend"
