@@ -1,5 +1,5 @@
 class Translation(object):
-    START_TEXT = """Welcome my Friend,
+    START_TEXT = """Welcome <code>{}</code>, 
     I am Telegram Renamer Bot with Custom Thumbnail support!!!
 
 <b>1.Send me any Telegram File...
@@ -47,5 +47,3 @@ The given file name has {num} characters.
 <b>Essays Not allowed in Telegram file name!</b>
 ©️ <code>@Kalam_Renamer_Bot</code>
 Please short your file name and try again!"""
-    DONATE_TO_DEVELOPER = "Hai, my friend"
-    SUPPORTED_SITES = "Bai, m"
