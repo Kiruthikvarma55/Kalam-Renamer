@@ -1,4 +1,13 @@
 class Translation(object):
+    START_TEXT = """Welcome {message.from_user.first_name}, 
+    I am Telegram Renamer Bot with Custom Thumbnail support!!!
+
+<b>1.Send me any Telegram File...
+2. Reply to that message to /rename new name.extension</b>
+
+/help for more Details about me...
+
+<b>Developer : © @Kalam_Company</b>"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = "<b>If you Fail, Never give up because FAIL means 'First Attempt In Learning'</b>"
     UPGRADE_TEXT = "Join to my Developer channel © @Kalam_Company for upgrade your plan...  /help for more Details"
