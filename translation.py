@@ -1,13 +1,16 @@
 class Translation(object):
-    START_TEXT = """Welcome <code>{}</code>, 
-    I am Telegram Renamer Bot with Custom Thumbnail support!!!
-
-<b>1.Send me any Telegram File...
-2. Reply to that message to /rename new name.extension</b>
-
-/help for more Details about me...
-
-<b>Developer : © @Kalam_Company</b>"""
+    START_TEXT = """from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
+@Client.on_message(Filters.command(["start"]), group=-2)
+async def start(client, message):
+    # return
+    joinButton = InlineKeyboardMarkup([
+        [InlineKeyboardButton("Channel", url="https://t.me/aryan_bots")],
+        [InlineKeyboardButton(
+            "Report Bugs 😊", url="https://t.me/aryanvikash")]
+    ])
+    welcomed = f"Hey <b>{message.from_user.first_name}</b>\n/help for More info"
+    await message.reply_text(welcomed, reply_markup=joinButton)
+    raise StopPropagation"""
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = "<b>If you Fail, Never give up because FAIL means 'First Attempt In Learning'</b>"
     UPGRADE_TEXT = "Join to my Developer channel © @Kalam_Company for upgrade your plan...  /help for more Details"
